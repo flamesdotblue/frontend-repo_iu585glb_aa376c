@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Rocket, Menu, X } from 'lucide-react';
+import { Gift, Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,24 +9,24 @@ export default function Navbar() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <a href="#" className="flex items-center gap-2 font-semibold">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-tr from-indigo-500 via-violet-500 to-fuchsia-500 text-white shadow">
-              <Rocket className="h-5 w-5" />
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-500 text-white shadow">
+              <Gift className="h-5 w-5" />
             </span>
-            <span className="text-lg">Vibe</span>
+            <span className="text-lg">Giftly</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8 text-sm">
-            <a href="#features" className="text-neutral-600 dark:text-neutral-300 hover:text-black dark:hover:text-white transition">Features</a>
-            <a href="#pricing" className="text-neutral-600 dark:text-neutral-300 hover:text-black dark:hover:text-white transition">Pricing</a>
-            <a href="#faq" className="text-neutral-600 dark:text-neutral-300 hover:text-black dark:hover:text-white transition">FAQ</a>
+            <a href="#collections" className="text-neutral-600 dark:text-neutral-300 hover:text-black dark:hover:text-white transition">Collections</a>
+            <a href="#occasions" className="text-neutral-600 dark:text-neutral-300 hover:text-black dark:hover:text-white transition">Occasions</a>
+            <a href="#how" className="text-neutral-600 dark:text-neutral-300 hover:text-black dark:hover:text-white transition">How it works</a>
           </div>
 
           <div className="hidden md:flex items-center gap-3">
             <button className="px-4 py-2 rounded-lg text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition">
               Sign in
             </button>
-            <button className="px-4 py-2 rounded-lg text-sm font-medium text-white bg-gradient-to-r from-indigo-600 to-fuchsia-600 shadow hover:shadow-md transition">
-              Get started
+            <button className="px-4 py-2 rounded-lg text-sm font-medium text-white bg-gradient-to-r from-rose-600 to-fuchsia-600 shadow hover:shadow-md transition">
+              Start gifting
             </button>
           </div>
 
@@ -42,15 +42,15 @@ export default function Navbar() {
         {open && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col gap-2">
-              <a href="#features" className="rounded-md px-3 py-2 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800">Features</a>
-              <a href="#pricing" className="rounded-md px-3 py-2 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800">Pricing</a>
-              <a href="#faq" className="rounded-md px-3 py-2 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800">FAQ</a>
+              <a href="#collections" className="rounded-md px-3 py-2 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800">Collections</a>
+              <a href="#occasions" className="rounded-md px-3 py-2 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800">Occasions</a>
+              <a href="#how" className="rounded-md px-3 py-2 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800">How it works</a>
               <div className="mt-2 flex gap-2">
                 <button className="flex-1 px-4 py-2 rounded-lg text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition">
                   Sign in
                 </button>
-                <button className="flex-1 px-4 py-2 rounded-lg text-sm font-medium text-white bg-gradient-to-r from-indigo-600 to-fuchsia-600 shadow hover:shadow-md transition">
-                  Get started
+                <button className="flex-1 px-4 py-2 rounded-lg text-sm font-medium text-white bg-gradient-to-r from-rose-600 to-fuchsia-600 shadow hover:shadow-md transition">
+                  Start gifting
                 </button>
               </div>
             </div>
